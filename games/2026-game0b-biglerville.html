@@ -15,9 +15,10 @@
   a { color: var(--navy); }
   table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 0.9rem;
           margin-top: 1rem; }
-  th { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--navy);
+  th { text-align: center; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--navy);
        font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
-  td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); }
+  th.name-col, td.name-col { text-align: left; }
+  td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); text-align: center; }
   td.num { color: var(--gold); font-weight: bold; width: 2.5rem; }
   .roster-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr;
                  gap: 0.3rem 1.5rem; font-family: Arial, sans-serif; }
@@ -29,6 +30,10 @@
   .result.W { background: #234d2e; color: white; }
   .result.L { background: #7a2e2e; color: white; }
   .result.T { background: #6b6b6b; color: white; }
+  .dot { color: var(--gold); font-size: 1.1rem; }
+  h2.section { font-family:Arial,sans-serif; font-size:0.85rem; letter-spacing:0.08em;
+      text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--line);
+      padding-bottom:0.5rem; margin-top:2.5rem; }
 
   .score-banner { text-align: center; margin: 1.5rem 0 2rem; }
   .score-banner .score { font-size: 2.4rem; font-weight: bold; color: var(--navy); }
@@ -46,187 +51,364 @@
     <span class="result L">L</span>
   </div>
   <table>
-    <thead><tr><th>#</th><th>Player</th><th>Status</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th></tr></thead>
+    <thead><tr><th>#</th><th class="name-col">Player</th><th>Starter</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th><th>PS</th></tr></thead>
     <tbody>
             <tr>
-              <td class="num">21</td>
-              <td><a href="../players/21.html">Carlino, Siena</a></td>
-              <td>Started</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td class="num">22</td>
-              <td><a href="../players/22.html">Levering, Olivia</a></td>
-              <td>Started</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td class="num">10</td>
-              <td><a href="../players/10.html">Tice, Norah</a></td>
-              <td>Started</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td class="num">4</td>
-              <td><a href="../players/4.html">Babiarz, Reagan</a></td>
-              <td>Sub</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
               <td class="num">5</td>
-              <td><a href="../players/5.html">Gonzalez, Leiani</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/5.html">Gonzalez, Leiani</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
+              <td>-</td>
             </tr>
-
             <tr>
               <td class="num">6</td>
-              <td><a href="../players/6.html">Armistead, Mayleen</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/6.html">Armistead, Mayleen</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
+              <td>-</td>
             </tr>
-
             <tr>
-              <td class="num">8</td>
-              <td><a href="../players/8.html">Cook, Erielle</a></td>
-              <td>Sub</td>
+              <td class="num">10</td>
+              <td class="name-col"><a href="../players/10.html">Tice, Norah</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>1</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>-</td>
             </tr>
-
-            <tr>
-              <td class="num">9</td>
-              <td><a href="../players/9.html">Wengrowski, Presley</a></td>
-              <td>Sub</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-
             <tr>
               <td class="num">15</td>
-              <td><a href="../players/15.html">Fenicle, Reagan</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/15.html">Fenicle, Reagan</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
+              <td>-</td>
             </tr>
-
             <tr>
               <td class="num">17</td>
-              <td><a href="../players/17.html">Maturi, Emily</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/17.html">Maturi, Emily</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
+              <td>-</td>
             </tr>
-
+            <tr>
+              <td class="num">21</td>
+              <td class="name-col"><a href="../players/21.html">Carlino, Siena</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">22</td>
+              <td class="name-col"><a href="../players/22.html">Levering, Olivia</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1/1</td>
+            </tr>
             <tr>
               <td class="num">24</td>
-              <td><a href="../players/24.html">Anders, Megan</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/24.html">Anders, Megan</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
+              <td>-</td>
             </tr>
-
             <tr>
               <td class="num">25</td>
-              <td><a href="../players/25.html">King, Leah</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/25.html">King, Leah</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
+              <td>-</td>
             </tr>
-
             <tr>
               <td class="num">27</td>
-              <td><a href="../players/27.html">Zabinski, Sara</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/27.html">Zabinski, Sara</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
               <td>1</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">4</td>
+              <td class="name-col"><a href="../players/4.html">Babiarz, Reagan</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">8</td>
+              <td class="name-col"><a href="../players/8.html">Cook, Erielle</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">9</td>
+              <td class="name-col"><a href="../players/9.html">Wengrowski, Presley</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
             </tr></tbody>
   </table>
   
-        <h2 style="font-family:Arial,sans-serif;font-size:0.85rem;letter-spacing:0.08em;
-            text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);
-            padding-bottom:0.5rem;margin-top:2rem;">Goalkeeping</h2>
+        <h2 class="section">Goalkeeping</h2>
         <table>
-          <thead><tr><th>#</th><th>Player</th><th>Status</th><th>Min</th><th>Saves</th><th>GA</th><th>GAA</th></tr></thead>
+          <thead><tr><th>#</th><th class="name-col">Player</th><th>Starter</th><th>Min</th><th>Saves</th><th>GA</th><th>Save%</th></tr></thead>
           <tbody>
             <tr>
-              <td class="num">44</td>
-              <td><a href="../players/44.html">King, Mallory</a></td>
-              <td>Sub</td>
-              <td>15</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0.00</td>
-            </tr>
-            <tr>
               <td class="num">55</td>
-              <td><a href="../players/55.html">Meletiche-Stamus, Avalyse</a></td>
-              <td>Started</td>
+              <td class="name-col"><a href="../players/55.html">Meletiche-Stamus, Avalyse</a></td>
+              <td><span class="dot">&bull;</span></td>
               <td>45</td>
               <td>0</td>
               <td>3</td>
-              <td>4.00</td>
+              <td>0.000</td>
+            </tr>
+            <tr>
+              <td class="num">44</td>
+              <td class="name-col"><a href="../players/44.html">King, Mallory</a></td>
+              <td></td>
+              <td>15</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1.000</td>
             </tr></tbody>
         </table>
   
-        <h2 style="font-family:Arial,sans-serif;font-size:0.85rem;letter-spacing:0.08em;
-            text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);
-            padding-bottom:0.5rem;margin-top:2rem;">Team Totals</h2>
+        <h2 class="section">Biglerville Box Score</h2>
+        
         <table>
-          <thead><tr><th></th><th>Corners</th><th>Shots on Goal</th><th>Saves</th></tr></thead>
+          <thead><tr><th>#</th><th class="name-col">Player</th><th>Starter</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th><th>PS</th></tr></thead>
           <tbody>
-            <tr><td>Wyomissing</td><td>-</td>
+            <tr>
+              <td class="num">1</td>
+              <td class="name-col"><a href="../players/1.html">Leah Kaufman</a></td>
+              <td></td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">2</td>
+              <td class="name-col"><a href="../players/2.html">Alex Cruz</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">4</td>
+              <td class="name-col"><a href="../players/4.html">Kendra Harbaugh</a></td>
+              <td></td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">5</td>
+              <td class="name-col"><a href="../players/5.html">Hayden Morris</a></td>
+              <td></td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">6</td>
+              <td class="name-col"><a href="../players/6.html">Gracie Parr</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">9</td>
+              <td class="name-col"><a href="../players/9.html">Addison Deardorff</a></td>
+              <td></td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">10</td>
+              <td class="name-col"><a href="../players/10.html">Jenna Walter</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">12</td>
+              <td class="name-col"><a href="../players/12.html">Elyse Meade</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">13</td>
+              <td class="name-col"><a href="../players/13.html">Ella Nash</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">23</td>
+              <td class="name-col"><a href="../players/23.html">Miki Sload</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">24</td>
+              <td class="name-col"><a href="../players/24.html">Mia Martinez Navarro</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">27</td>
+              <td class="name-col"><a href="../players/27.html">Piper Johnson</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr></tbody>
+        </table>
+  
+        <h2 class="section">Scoring Summary</h2>
+        <table>
+          <thead><tr><th>Q</th><th>Time</th><th class="name-col">Team</th><th class="name-col">Scorer</th><th class="name-col">Assist</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>6:51</td>
+              <td class="name-col">Biglerville</td>
+              <td class="name-col">#4 Kendra Harbaugh</td>
+              <td class="name-col">Addison Deardorff</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>12:02</td>
+              <td class="name-col">Wyomissing</td>
+              <td class="name-col">#22 Levering, Olivia</td>
+              <td class="name-col">Penalty Stroke</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>6:48</td>
+              <td class="name-col">Wyomissing</td>
+              <td class="name-col">#21 Carlino, Siena</td>
+              <td class="name-col">Tice, Norah</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>10:34</td>
+              <td class="name-col">Biglerville</td>
+              <td class="name-col">#4 Kendra Harbaugh</td>
+              <td class="name-col">Hayden Morris</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>5:51</td>
+              <td class="name-col">Biglerville</td>
+              <td class="name-col">#1 Leah Kaufman</td>
+              <td class="name-col">Kendra Harbaugh</td>
+            </tr></tbody>
+        </table>
+  
+        <h2 class="section">Team Totals</h2>
+        <table>
+          <thead><tr><th class="name-col"></th><th>Corners</th><th>Shots on Goal</th><th>Saves</th></tr></thead>
+          <tbody>
+            <tr><td class="name-col">Wyomissing</td><td>-</td>
                 <td>-</td><td>-</td></tr>
-            <tr><td>Biglerville</td><td>1</td>
+            <tr><td class="name-col">Biglerville</td><td>1</td>
                 <td>4</td><td>6</td></tr>
           </tbody>
         </table>

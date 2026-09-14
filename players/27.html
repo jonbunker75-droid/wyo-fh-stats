@@ -15,9 +15,10 @@
   a { color: var(--navy); }
   table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 0.9rem;
           margin-top: 1rem; }
-  th { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--navy);
+  th { text-align: center; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--navy);
        font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
-  td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); }
+  th.name-col, td.name-col { text-align: left; }
+  td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); text-align: center; }
   td.num { color: var(--gold); font-weight: bold; width: 2.5rem; }
   .roster-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr;
                  gap: 0.3rem 1.5rem; font-family: Arial, sans-serif; }
@@ -29,6 +30,10 @@
   .result.W { background: #234d2e; color: white; }
   .result.L { background: #7a2e2e; color: white; }
   .result.T { background: #6b6b6b; color: white; }
+  .dot { color: var(--gold); font-size: 1.1rem; }
+  h2.section { font-family:Arial,sans-serif; font-size:0.85rem; letter-spacing:0.08em;
+      text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--line);
+      padding-bottom:0.5rem; margin-top:2.5rem; }
 </style></head>
 <body><div class="wrap">
   <p class="back"><a href="../index.html">&larr; Season Home</a></p>
@@ -38,40 +43,17 @@
   </header>
   <table>
     <thead><tr><th>Season</th><th>GP</th><th>GS</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th></tr></thead>
-    <tbody><tr><td>Totals</td><td>7</td><td>7</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td></tr></tbody>
+    <tbody><tr><td class='name-col'>Totals</td><td>7</td><td>7</td><td>1</td><td>1</td><td>2</td><td>2</td><td>1</td></tr></tbody>
   </table>
-  <h2 style="font-family:Arial,sans-serif;font-size:0.85rem;letter-spacing:0.08em;
-      text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);
-      padding-bottom:0.5rem;margin-top:2.5rem;">Game Log</h2>
+  <h2 class="section">Game Log</h2>
   <table>
-    <thead><tr><th>Date</th><th>Opponent</th><th>Status</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th></tr></thead>
+    <thead><tr><th class="name-col">Date</th><th class="name-col">Opponent</th><th>GS</th><th>GP</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th></tr></thead>
     <tbody>
             <tr>
-              <td>2026-09-05</td>
-              <td><a href="../games/2026-game0-camphill.html">Mifflin County</a></td>
-              <td>Started</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-
-            <tr>
-              <td>2026-09-05</td>
-              <td><a href="../games/2026-game0b-biglerville.html">Biglerville</a></td>
-              <td>Started</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>1</td>
-            </tr>
-
-            <tr>
-              <td>2026-08-28</td>
-              <td><a href="../games/2026-game1.html">Muhlenberg</a></td>
-              <td>-</td>
+              <td class="name-col">2026-08-28</td>
+              <td class="name-col"><a href="../games/2026-game1.html">Muhlenberg</a></td>
+              <td></td>
+              <td></td>
               <td>1</td>
               <td>0</td>
               <td>1</td>
@@ -80,9 +62,10 @@
             </tr>
 
             <tr>
-              <td>2026-09-01</td>
-              <td><a href="../games/2026-game2-octorara.html">Octorara</a></td>
-              <td>Started</td>
+              <td class="name-col">2026-09-01</td>
+              <td class="name-col"><a href="../games/2026-game2-octorara.html">Octorara</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>1</td>
               <td>0</td>
@@ -91,9 +74,10 @@
             </tr>
 
             <tr>
-              <td>2026-09-02</td>
-              <td><a href="../games/2026-game3-lcd.html">Lancaster Country Day</a></td>
-              <td>Started</td>
+              <td class="name-col">2026-09-02</td>
+              <td class="name-col"><a href="../games/2026-game3-lcd.html">Lancaster Country Day</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
@@ -102,9 +86,34 @@
             </tr>
 
             <tr>
-              <td>2026-09-09</td>
-              <td><a href="../games/2026-game4-reading.html">Reading</a></td>
-              <td>Started</td>
+              <td class="name-col">2026-09-05</td>
+              <td class="name-col"><a href="../games/2026-game0-camphill.html">Mifflin County</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+
+            <tr>
+              <td class="name-col">2026-09-05</td>
+              <td class="name-col"><a href="../games/2026-game0b-biglerville.html">Biglerville</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <td class="name-col">2026-09-09</td>
+              <td class="name-col"><a href="../games/2026-game4-reading.html">Reading</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>1</td>
@@ -113,9 +122,10 @@
             </tr>
 
             <tr>
-              <td>2026-09-10</td>
-              <td><a href="../games/2026-game5-oley.html">Oley</a></td>
-              <td>Started</td>
+              <td class="name-col">2026-09-10</td>
+              <td class="name-col"><a href="../games/2026-game5-oley.html">Oley</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
@@ -124,9 +134,10 @@
             </tr>
 
             <tr>
-              <td>2026-09-12</td>
-              <td><a href="../games/2026-game6-ephrata.html">Ephrata</a></td>
-              <td>Started</td>
+              <td class="name-col">2026-09-12</td>
+              <td class="name-col"><a href="../games/2026-game6-ephrata.html">Ephrata</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td><span class="dot">&bull;</span></td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
