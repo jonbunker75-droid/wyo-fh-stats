@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wyomissing vs Schuylkill Valley - Box Score</title>
+<style>
+  :root { --navy: #1a2744; --gold: #c9a24b; --paper: #f7f6f3; --line: #ddd8cf; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: var(--paper);
+         color: var(--navy); padding: 2rem 1rem 4rem; }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2rem; }
+  header h1 { font-size: 1.9rem; margin: 0 0 0.25rem; }
+  header .sub { font-family: Arial, sans-serif; font-size: 0.85rem; letter-spacing: 0.06em;
+                text-transform: uppercase; color: #6b6b6b; }
+  a { color: var(--navy); }
+  table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 0.9rem;
+          margin-top: 1rem; }
+  th { text-align: center; padding: 0.5rem 0.6rem; border-bottom: 2px solid var(--navy);
+       font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  th.name-col, td.name-col { text-align: left; }
+  td { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); text-align: center; }
+  td.num { color: var(--gold); font-weight: bold; width: 2.5rem; }
+  .roster-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr;
+                 gap: 0.3rem 1.5rem; font-family: Arial, sans-serif; }
+  .roster-list li { padding: 0.4rem 0; border-bottom: 1px solid var(--line); }
+  .roster-list a { text-decoration: none; font-weight: bold; }
+  .back { font-family: Arial, sans-serif; font-size: 0.8rem; }
+  .result { display: inline-block; font-family: Arial, sans-serif; font-weight: bold;
+      font-size: 0.72rem; letter-spacing: 0.05em; padding: 0.1rem 0.4rem; border-radius: 3px; }
+  .result.W { background: #234d2e; color: white; }
+  .result.L { background: #7a2e2e; color: white; }
+  .result.T { background: #6b6b6b; color: white; }
+  .dot { color: var(--gold); font-size: 1.1rem; }
+  h2.section { font-family:Arial,sans-serif; font-size:0.85rem; letter-spacing:0.08em;
+      text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--line);
+      padding-bottom:0.5rem; margin-top:2.5rem; }
+
+  
+  .donut-row { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; margin-top: 1rem; }
+  .donut-card { text-align: center; width: 140px; }
+  .donut { width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 0.5rem;
+    display: flex; align-items: center; justify-content: center; }
+  .donut-hole { width: 58px; height: 58px; border-radius: 50%; background: var(--paper); }
+  .donut-label { font-family: Arial, sans-serif; font-weight: bold; font-size: 0.82rem; }
+  .donut-legend { font-family: Arial, sans-serif; font-size: 0.65rem; text-align: left; margin-top: 0.4rem; }
+  .donut-legend span { display: block; margin-bottom: 2px; }
+  .donut-legend i { display: inline-block; width: 8px; height: 8px; margin-right: 5px; border-radius: 2px; }
+
+  .score-banner { text-align: center; margin: 1.5rem 0 2rem; }
+  .score-banner .score { font-size: 2.4rem; font-weight: bold; color: var(--navy); }
+  .score-banner .result { font-size: 0.85rem; padding: 0.15rem 0.6rem;
+      margin-left: 0.6rem; vertical-align: middle; }
+</style></head>
+<body><div class="wrap">
+  <p class="back"><a href="../index.html">&larr; Season Home</a></p>
+  <header>
+    <h1>Wyomissing vs Schuylkill Valley</h1>
+    <div class="sub">2026-09-17 (at Schuylkill Valley)</div>
+  </header>
+  <div class="score-banner">
+    <span class="score">3 - 1</span>
+    <span class="result W">W</span>
+  </div>
+  <table>
+    <thead><tr><th>#</th><th class="name-col">Player</th><th>Starter</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th><th>PS</th></tr></thead>
+    <tbody>
+            <tr>
+              <td class="num">5</td>
+              <td class="name-col"><a href="../players/5.html">Leiani Gonzalez</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">6</td>
+              <td class="name-col"><a href="../players/6.html">Mayleen Armistead</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">9</td>
+              <td class="name-col"><a href="../players/9.html">Presley Wengrowski</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">10</td>
+              <td class="name-col"><a href="../players/10.html">Norah Tice</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>1</td>
+              <td>1</td>
+              <td>4</td>
+              <td>4</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">16</td>
+              <td class="name-col"><a href="../players/16.html">Julianne Outland</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">21</td>
+              <td class="name-col"><a href="../players/21.html">Siena Carlino</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>3</td>
+              <td>3</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">22</td>
+              <td class="name-col"><a href="../players/22.html">Olivia Levering</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">24</td>
+              <td class="name-col"><a href="../players/24.html">Megan Anders</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>1</td>
+              <td>0</td>
+              <td>5</td>
+              <td>4</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">25</td>
+              <td class="name-col"><a href="../players/25.html">Leah King</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">27</td>
+              <td class="name-col"><a href="../players/27.html">Sara Zabinski</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">15</td>
+              <td class="name-col"><a href="../players/15.html">Reagan Fenicle</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>-</td>
+            </tr></tbody>
+  </table>
+  
+        <h2 class="section">Goalkeeping</h2>
+        <table>
+          <thead><tr><th>#</th><th class="name-col">Player</th><th>Starter</th><th>Min</th><th>Saves</th><th>GA</th><th>Save%</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="num">55</td>
+              <td class="name-col"><a href="../players/55.html">Avalyse Meletiche-Stamus</a></td>
+              <td><span class="dot">&bull;</span></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">44</td>
+              <td class="name-col"><a href="../players/44.html">Mallory King</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr></tbody>
+        </table>
+  
+        <h2 class="section">Schuylkill Valley Box Score</h2>
+        
+        <table>
+          <thead><tr><th>#</th><th class="name-col">Player</th><th>Starter</th><th>G</th><th>A</th><th>Shots</th><th>SOG</th><th>DS</th><th>PS</th></tr></thead>
+          <tbody>
+            <tr>
+              <td class="num">1</td>
+              <td class="name-col"><a href="../players/1.html">Trinity Brill</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">2</td>
+              <td class="name-col"><a href="../players/2.html">Megan Angstadt</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">3</td>
+              <td class="name-col"><a href="../players/3.html">Madison Weyandt</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">5</td>
+              <td class="name-col"><a href="../players/5.html">Madison Sensenig</a></td>
+              <td></td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">8</td>
+              <td class="name-col"><a href="../players/8.html">Ava Zettlemoyer</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">9</td>
+              <td class="name-col"><a href="../players/9.html">Emma Grassi</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">10</td>
+              <td class="name-col"><a href="../players/10.html">Erin Walsh</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">11</td>
+              <td class="name-col"><a href="../players/11.html">Taryn Ripple</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">13</td>
+              <td class="name-col"><a href="../players/13.html">Ellie Weyandt</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">17</td>
+              <td class="name-col"><a href="../players/17.html">Gracie George</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">19</td>
+              <td class="name-col"><a href="../players/19.html">Zoe Clark</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">20</td>
+              <td class="name-col"><a href="../players/20.html">Annabelle Adams</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">25</td>
+              <td class="name-col"><a href="../players/25.html">Genevieve Disney</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">29</td>
+              <td class="name-col"><a href="../players/29.html">Harper Smith</a></td>
+              <td></td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="num">30</td>
+              <td class="name-col"><a href="../players/30.html">Brooke Angstadt</a></td>
+              <td></td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>-</td>
+            </tr></tbody>
+        </table>
+        
+  
+        <h2 class="section">Scoring Summary</h2>
+        <table>
+          <thead><tr><th>Q</th><th>Time</th><th class="name-col">Team</th><th class="name-col">Scorer</th><th class="name-col">Assist</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>9:21</td>
+              <td class="name-col">Wyomissing</td>
+              <td class="name-col">#24 Megan Anders</td>
+              <td class="name-col">Norah Tice</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>10:55</td>
+              <td class="name-col">Wyomissing</td>
+              <td class="name-col">#10 Norah Tice</td>
+              <td class="name-col">-</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>0:49</td>
+              <td class="name-col">Schuylkill Valley</td>
+              <td class="name-col">#30 Brooke Angstadt</td>
+              <td class="name-col">Madison Sensenig</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>1:23</td>
+              <td class="name-col">Wyomissing</td>
+              <td class="name-col">#22 Olivia Levering</td>
+              <td class="name-col">Penalty Stroke</td>
+            </tr></tbody>
+        </table>
+  
+    <h2 class="section">Offensive Possessions (Wyomissing)</h2>
+    <div class="donut-row">
+        <div class="donut-card">
+          <div class="donut" style="background:conic-gradient(#2e7d32 0.0% 65.0%, #1565c0 65.0% 72.5%, #f9a825 72.5% 97.5%, #9e9e9e 97.5% 100.0%)"><div class="donut-hole"></div></div>
+          <div class="donut-label">Q1</div>
+          <div class="donut-legend"><span><i style="background:#2e7d32"></i>Completed 65.0%</span><span><i style="background:#1565c0"></i>Stolen 7.5%</span><span><i style="background:#f9a825"></i>Turnover 25.0%</span><span><i style="background:#9e9e9e"></i>OB 2.5%</span></div>
+        </div>
+        <div class="donut-card">
+          <div class="donut" style="background:conic-gradient(#2e7d32 0.0% 75.8%, #1565c0 75.8% 78.8%, #f9a825 78.8% 100.0%, #9e9e9e 100.0% 100.0%)"><div class="donut-hole"></div></div>
+          <div class="donut-label">Q2</div>
+          <div class="donut-legend"><span><i style="background:#2e7d32"></i>Completed 75.8%</span><span><i style="background:#1565c0"></i>Stolen 3.0%</span><span><i style="background:#f9a825"></i>Turnover 21.2%</span><span><i style="background:#9e9e9e"></i>OB 0.0%</span></div>
+        </div>
+        <div class="donut-card">
+          <div class="donut" style="background:conic-gradient(#2e7d32 0.0% 56.2%, #1565c0 56.2% 59.300000000000004%, #f9a825 59.300000000000004% 90.5%, #9e9e9e 90.5% 99.9%)"><div class="donut-hole"></div></div>
+          <div class="donut-label">Q3</div>
+          <div class="donut-legend"><span><i style="background:#2e7d32"></i>Completed 56.2%</span><span><i style="background:#1565c0"></i>Stolen 3.1%</span><span><i style="background:#f9a825"></i>Turnover 31.2%</span><span><i style="background:#9e9e9e"></i>OB 9.4%</span></div>
+        </div>
+        <div class="donut-card">
+          <div class="donut" style="background:conic-gradient(#2e7d32 0.0% 75.0%, #1565c0 75.0% 82.5%, #f9a825 82.5% 90.0%, #9e9e9e 90.0% 100.0%)"><div class="donut-hole"></div></div>
+          <div class="donut-label">Q4</div>
+          <div class="donut-legend"><span><i style="background:#2e7d32"></i>Completed 75.0%</span><span><i style="background:#1565c0"></i>Stolen 7.5%</span><span><i style="background:#f9a825"></i>Turnover 7.5%</span><span><i style="background:#9e9e9e"></i>OB 10.0%</span></div>
+        </div>
+        <div class="donut-card">
+          <div class="donut" style="background:conic-gradient(#2e7d32 0.0% 68.3%, #1565c0 68.3% 73.8%, #f9a825 73.8% 94.5%, #9e9e9e 94.5% 100.0%)"><div class="donut-hole"></div></div>
+          <div class="donut-label">Total</div>
+          <div class="donut-legend"><span><i style="background:#2e7d32"></i>Completed 68.3%</span><span><i style="background:#1565c0"></i>Stolen 5.5%</span><span><i style="background:#f9a825"></i>Turnover 20.7%</span><span><i style="background:#9e9e9e"></i>OB 5.5%</span></div>
+        </div></div>
+  
+    <h2 class="section">Wyomissing Corner Report</h2>
+    <p class="back">5 corners &mdash; 4 of 4 rated corners threatening (100.0%)</p>
+    <p class="back" style="color:#6b6b6b;">1 corner(s) have no recorded threat rating.</p>
+    <table>
+      <thead><tr><th>Q</th><th>Inserter(s)</th><th>Rebounded</th><th>Goal</th><th>Grade</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Q1</td>
+          <td>21, 21, 21</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>21</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>21</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>21, 21</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q4</td>
+          <td>21</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Unrated</td>
+        </tr></tbody>
+    </table>
+    <h2 class="section">Schuylkill Valley Corner Report</h2>
+    <p class="back">9 corners &mdash; 6 of 6 rated corners threatening (100.0%)</p>
+    <p class="back" style="color:#6b6b6b;">3 corner(s) have no recorded threat rating.</p>
+    <table>
+      <thead><tr><th>Q</th><th>Inserter(s)</th><th>Rebounded</th><th>Goal</th><th>Grade</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Q1</td>
+          <td>9</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>9, 9</td>
+          <td>Yes</td>
+          <td>No</td>
+          <td>Unrated</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>5</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>9</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q3</td>
+          <td>9</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Unrated</td>
+        </tr>
+        <tr>
+          <td>Q3</td>
+          <td>9</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q3</td>
+          <td>9</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q4</td>
+          <td>9</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Threatening</td>
+        </tr>
+        <tr>
+          <td>Q4</td>
+          <td>9</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Unrated</td>
+        </tr></tbody>
+    </table>
+  
+  
+</div></body></html>
